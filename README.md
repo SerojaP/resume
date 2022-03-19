@@ -2,4 +2,4 @@
 
 ## Результат Вы можете посмотреть тут
 
-[Моя первая работа](https://duckduckgo.comserojap.github.io/resume/)
+[Моя первая работа](https://serojap.github.io/resume/)
