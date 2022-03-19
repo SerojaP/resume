@@ -1,71 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sergey Pepelyaev Resume</title>
-</head>
-<body>
-    <h1>Сергей Пепеляев</h1>
-        <img src="photo.jpeg" alt="Фото" width="200">
-        <p>Мне 27 лет. Я хочу освоить <strong>программирование</strong> .
-    <h2>Мои социальные сети</h2>
-        <a href="//vk.com/id99793050">VKontakte</a>
-        <a href="//t.me/SerojaP">Telegram</a>
-    <h2>Мои хобби</h2>
-        <ol>
-            <li>Пауэрлифтинг</li>
-            <li>Шахматы</li>
-            <li>Рыбалка</li>
-            <li>Пчеловодство</li>
-            <li>3D моделирование</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="sergey, cv, resume">
+    <meta name="description" content="Это сайт - резюме Сергея Пепеляева">
+    <title> Sergey Resume</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="info">
+        <img src="photo.jpeg" alt="Фото" class="avatar" />
+
+        <div class="info-text">
+          <h1>Сергей Пепеляев</h1>
+
+          <p>
+            Мне 27 лет. Я живу в городе Пермь. Я хочу освоить
+            <strong>программирование</strong>.
+          </p>
+
+          <h3>Cоциальные сети:</h3>
+          <a href="//vk.com/id99793050">VKontakte</a>
+          <a href="//t.me/SerojaP">Telegram</a>
+        </div>
+      </div>
+
+      <div class="card bg-blue">
+        <h2>Личные качества</h2>
+        <ul class="list">
+          <li>
+            не смогу спокойно лечь спать если не выполню план на день;
+          </li>
+          <li>
+            умею слышать и слушать;
+          </li>
+          
+          <li>
+            оперативно меняю подход под резкие перемены;
+          </li>
+          <li>
+            нахожу общий язык с любым человеком;
+          </li>
+        </ul>
+      </div>
+
+      <div class="card bg-blue">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+          <li>Пауэрлифтинг</li>
+          <li>Шахматы</li>
+          <li>Рыбалка</li>
+          <li>Пчеловодство</li>
+          <li>3D моделирование</li>
         </ol>
-    
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
+      </div>
+
+      <div class="card bg-withe">
+        <h2>Опыт работы</h2>
+
+        <table class="table">
+          <!--<thead>
             <tr>
-                <th>Место работы</th>
-                <th>Должность</th>
-                <th>Время работы</th>
+              <th>Место работы</th>
+              <th>Должность</th>
+              <th>Время работы</th>
             </tr>
-        </thead>
-        <tbody>
+          </thead>-->
+          <tbody>
             <tr>
-                <td>ПАО НПО "Искра"</td>
-                <td>Инженер-конструктор</td>
-                <td>2018-н.в.</td>
+              <td>ПАО НПО "Искра"</td>
+              <td>Инженер-конструктор</td>
+              <td>2018 - настоящее время</td>
             </tr>
+          </tbody>
+        </table>
+      </div>
 
-        </tbody>
-    </table>
-    <h2>Связаться со мной</h2>
-    <form>
-        <div>
-            <label for="email">Email</label>
-            <input type="email" id="email"
-            placeholder="Введите email">
-        </div>
-        
-        <div>
-            <label for="Name">Ваше имя</label>
-            <input type="Text" id="Name"
-            placeholder="Введите имя">
-        </div>
+      <form class="form">
+        <h2>Связаться со мной</h2>
 
-        <div>
-            <label for="message">Сообщение</label>
-            <textarea id="message" placeholder="Введите сообщение..."></textarea>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" placeholder="Введите email" />
+          </div>
+
+          <div class="form-group">
+            <label for="Name">Ваше имя:</label>
+            <input type="Text" id="Name" placeholder="Введите имя" />
+          </div>
         </div>
 
-        <input type="submit" value="Отправить">
-    </form>
+        <div class="form-group">
+          <label for="message">Ваше сообщение:</label>
+          <textarea id="message" placeholder="Введите сообщение..."></textarea>
+        </div>
 
-
-
-
-
-
-</body>
+        <input class="btn" type="submit" value="Отправить" />
+      </form>
+    </div>
+  </body>
 </html>

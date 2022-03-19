@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  background: #dbdbdb;
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 30px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.info {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.info-text {
+  margin-left: 30px;
+  background-color: white;
+  color: black;
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-left-color: #029fc7;
+  padding-left: 10px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.info-text h1 {
+  color: #029fc7;
+}
+
+.info-text p {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.info-text h3 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+
+  .info-text {
+    margin-left: 0;
+  }
+}
+
+.card {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  color: white;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.bg-blue {
+  background-color: #029fc7;
+}
+
+.bg-withe {
+  background-color: white;
+  color: black;
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-left-color: #029fc7;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: blue;
+}
+
+a:visited {
+  color: gray;
+}
+
+.btn {
+  background: black;
+  padding: 15px 20px;
+  color: white;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+
+.list {
+  padding: 0 20px;
+}
+
+.list li {
+  margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+}
+
+.table td:nth-child(2) {
+  color: rgb(59, 59, 59);
+}
+
+.form h2 {
+  text-align: center;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: gray;
+}
+
+.form-group input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        display: block;
+    }
+
+    .form-row .form-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+}
+
+.form-row .form-group {
+  margin-right: 20px;
+  width: 50%;
+}
+
+.form-row .form-group:last-child {
+  margin-right: 0;
+}
